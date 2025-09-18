@@ -1,9 +1,18 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "target": "ESNext",
     "module": "nodenext",
     "moduleResolution": "nodenext",
+    "strict": true,
+    "esModuleInterop": true,
     "types": [
-      "node"
+      "@types/node"
     ]
-  }
+  },
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist"
+  ]
 }

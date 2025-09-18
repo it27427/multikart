@@ -11,17 +11,24 @@
   },
   "dependencies": {
     "@primeuix/themes": "^1.2.3",
+    "@tailwindcss/vite": "^4.1.13",
     "add": "^2.0.6",
     "nuxt": "^4.1.2",
     "pathe": "^2.0.3",
+    "primeicons": "^7.0.0",
     "primevue": "^4.3.9",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^4.1.13",
+    "tailwindcss-primeui": "^0.6.1",
     "vue": "^3.5.21",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.6.3",
     "@nuxt/kit": "^4.1.2",
+    "@nuxt/types": "^2.18.1",
     "@primevue/nuxt-module": "^4.3.9",
-    "@types/node": "^24.5.2"
+    "@types/node": "^24.5.2",
+    "sass-embedded": "^1.92.1"
   }
 }
