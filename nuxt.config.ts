@@ -1,3 +1,4 @@
+import Aura from "@primeuix/themes/aura";
 import { defineNuxtConfig } from "nuxt/config";
 import { resolve } from "pathe";
 import { fileURLToPath } from "url";
@@ -8,7 +9,28 @@ export default defineNuxtConfig({
   modules: ["@primevue/nuxt-module"],
 
   primevue: {
-    unstyled: true,
+    autoImport: true,
+    components: {
+      include: "*",
+    },
+    // usePrimeVue: true,
+    // importPT: true,
+    directives: {
+      include: ["Ripple", "Tooltip"],
+    },
+    options: {
+      theme: {
+        preset: Aura,
+        options: {
+          darkModeSelector: "system",
+          cssLayer: false,
+        },
+      },
+    },
+  },
+
+  tailwindcss: {
+    configPath: "~/tailwind.config.ts",
   },
 
   css: ["primeicons/primeicons.css", "@/assets/scss/main.scss"],
