@@ -1,4 +1,7 @@
-module.exports = {
+import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
+
+const config: Config = {
   content: [
     "./components/**/*.{js,vue,ts}",
     "./layouts/**/*.vue",
@@ -32,5 +35,13 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(({ addBase, theme }) => {
+      addBase({
+        body: { fontFamily: theme("fontFamily.body") },
+      });
+    }),
+  ],
 };
+
+export default config;
