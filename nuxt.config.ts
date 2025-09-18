@@ -11,5 +11,6 @@ export default defineNuxtConfig({
   alias: {
     "@": resolve(__dirname, "./app"),
     "@/": resolve(fileURLToPath(import.meta.url), "./app"),
+    "~": resolve(fileURLToPath(import.meta.url), "./"),
   },
 });
