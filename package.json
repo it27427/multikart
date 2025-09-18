@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@primeuix/themes": "^1.2.3",
-    "@tailwindcss/vite": "^4.1.13",
-    "add": "^2.0.6",
     "nuxt": "^4.1.2",
     "pathe": "^2.0.3",
     "primeicons": "^7.0.0",
@@ -28,6 +26,7 @@
     "@nuxt/kit": "^4.1.2",
     "@nuxt/types": "^2.18.1",
     "@primevue/nuxt-module": "^4.3.9",
+    "@tailwindcss/vite": "^4.1.13",
     "@types/node": "^24.5.2",
     "sass-embedded": "^1.92.1"
   }
